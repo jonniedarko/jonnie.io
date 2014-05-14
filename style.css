@@ -11,10 +11,10 @@ Tags: white, black, gray, light, custom-menu, custom-header, custom-background, 
 Copyright (C) 2011-2014 Gents Themes
 License: GNU General Public License, version 3 (GPLv3)
 License URI: license.txt
-	
+
 CREATE CHILD THEME.
 See: http://codex.wordpress.org/Child_Themes
-	
+
 CSS Rules: Sorted alphabetically for better organization.
 */
 
@@ -96,7 +96,7 @@ hr {
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #222222; }
 
-.progress-bar-theme { background-color: #1abc9c; }
+.progress-bar-theme { background-color: #1A6EBC; }
 .navbar-header{
 	padding-bottom: 20px;
 }
@@ -143,7 +143,7 @@ hr {
   /* Set the fixed height of the footer here */
   /*height: 60px;*/
   background-color: #2f2f2f;
-  
+
 }
 
 
@@ -172,6 +172,27 @@ ba { font-size: 12px; padding-left: 5px; text-transform: uppercase; }
 /* Blog Tags */
 bt { font-size: 12px; }
 
+/*Circular Images*/
+.about-circular-avatar {
+	width: 155px;
+	height: 155px;
+	border-radius: 77px;
+	-webkit-border-radius: 77px;
+	-moz-border-radius: 77px;
+	background: url(http://www.gravatar.com/avatar/dbc7ad5935a0d4205ef0f97f516f082b.jpg?s=155) no-repeat;
+	margin:auto;
+	margin-right:0;
+	}
+
+.about-name{
+	text-align: left;
+}
+
+
+/* padding row bottom */
+.row-padded-bt{
+	padding-bottom: 10px;
+}
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 /* Effects also are controled by hover.zoom.js */
 .zoom {
@@ -201,8 +222,23 @@ bt { font-size: 12px; }
 
 /* glyphicon Configuration */
 
-.glyphicon { color: #1abc9c; font-size: 40px; }
+.glyphicon { color: #1A6EBC; font-size: 40px; }
 
 /* WP User Avatar */
 
 .wp-user-avatar {margin: 0;}
+
+@media screen and (max-width : 768px) {
+	.about-name{
+	text-align: center;
+	}
+	.about-circular-avatar{
+		margin:auto;
+	}
+	.social-child-row{
+		display:inline-block;
+		width:100%;
+		margin: auto;
+	}
+
+}
