@@ -238,7 +238,8 @@ bt { font-size: 12px; }
 	.social-child-row{
 		display:inline-block;
 		width:100%;
-		margin: auto;
+		margin: 0 auto ;
+		text-align: center;
 	}
 
 }
